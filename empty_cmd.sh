@@ -7,12 +7,12 @@ fi
 
 echo "       " | ./$1
 echo "\"       \"" $? "the result should be 0"
-
+echo " "
 echo "ls" | ./$1
 echo "\"ls\"" $? "the result should be 0"
-
+echo " "
 echo "ls /aaaaaa" | ./$1
 echo "\"ls /aaaaaaa\"" $? "the result should be 2"
-
+echo " "
 echo "thiscommanddoesntexist" | ./$1
 echo "\"thiscommanddoesntexist\"" $? "the result should be 127"
