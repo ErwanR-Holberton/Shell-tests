@@ -6,5 +6,4 @@ if [ $# -ne 1 ]; then
 fi
 
 valgrind echo "       " | ./$1
-echo " "
 echo "\"       \"" $? "the result should be 0"

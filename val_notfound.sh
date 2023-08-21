@@ -5,5 +5,5 @@ if [ $# -ne 1 ]; then
 	exit 1
 fi
 
-valgrind echo "ls -la" | ./$1
-echo "\"ls -la\"" $? "the result should be 0"
+valgrind echo "gibberish" | ./$1
+echo "\"gibberish\" $? the result should be 127"
